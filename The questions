@@ -1,0 +1,26 @@
+import time
+
+def ask_question(question, delay=2):
+    print(question)
+    time.sleep(delay)
+
+def get_player_response():
+    return input("Your answer: ")
+
+
+questions = [
+    "Do you ever feel like you're being watched, even when you're alone?",
+    "Have you ever heard whispers in an empty room?",
+    "Do you believe in ghosts?",
+    "Have you ever seen something you couldn't explain?",
+    "What's the scariest place you've ever been to at night?",
+    "Do you ever feel a presence in the darkness, just out of sight?",
+    "Have you ever had a nightmare that felt too real?",
+]
+
+for question in questions:
+    ask_question(question)
+    response = get_player_response()
+    print(f"You answered: {response}")
+
+print("That's enough for now.")
